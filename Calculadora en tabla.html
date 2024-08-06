@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Aritmética</title>
+    <link rel="stylesheet" type="text/css" href="Estiloscalcu.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <form name="calform" id="calform" onsubmit="return calcular();">
+        <table border="1" align="center" id="tabla" style="width:100%">
+            <tr>
+                <td colspan="2" class="button-container"><h2>Calculadora</h2></td>
+            <tr>
+            </tr>
+                <td><label for="N1">Primer Valor:</label></td>
+                <td><input type="number" id="N1" name="N1"></td>
+            </tr>
+            <tr>
+                <td><label for="N2">Segundo Valor:</label></td>
+                <td><input type="number" id="N2" name="N2"></td>
+            </tr>
+            <tr>
+                <td>Resultado:</td>
+                <td><input type="number" id="result" name="result" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="suma" name="operacion" value="suma"></td>
+                <td><label for="suma">Sumar</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="resta" name="operacion" value="resta"></td>
+                <td><label for="resta">Restar</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="multiplicacion" name="operacion" value="multiplicacion"></td>
+                <td><label for="multiplicacion">Multiplicar</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="division" name="operacion" value="division"></td>
+                <td><label for="division">Dividir</label></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="button-container">
+                    <button type="submit">Calcular</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
+
+<
+
